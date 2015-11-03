@@ -4,7 +4,7 @@
 map <leader>t :NERDTreeToggle<CR>
 
 " Ctrl-P
-let g:ctrlp_root_markers = [ 'ignore.conf', 'writable.conf', 'root.ctrlp' ]
+let g:ctrlp_root_markers = [ 'root.ctrlp', '.git' ]
 let g:ctrlp_use_caching = 1
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $TEMP.'/ctrlp_cache'
@@ -20,4 +20,5 @@ set wildignore+=*.xcodeproj*							" Xcode
 set wildignore+=*.meta,*.asset,*\\Library\\*			" Unity
 set wildignore+=*.pyc,*.jar									
 set wildignore+=*.png,*.tga,*.jpg,*.psd,*.wav,*.svg
+set wildignore+=*\\.svn\\*                              " Subversion
 
