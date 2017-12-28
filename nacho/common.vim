@@ -28,6 +28,7 @@ set incsearch
 " I don't want the backups in the same folder as the file
 set backupdir=$TEMP
 set directory=$TEMP
+set undodir=$TEMP
 
 " Whitespaces 
 set listchars=tab:»\ ,eol:¶

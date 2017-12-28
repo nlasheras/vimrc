@@ -1,7 +1,12 @@
 "" Configuration for common plugins
 
-" NERDTree
-map <leader>t :NERDTreeToggle<CR>
+" netrw
+map <leader>t :Vexplore<CR>
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 25
+let g:netrw_altv = 0
 
 " Ctrl-P
 let g:ctrlp_root_markers = [ 'root.ctrlp', '.git' ]
