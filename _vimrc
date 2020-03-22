@@ -3,7 +3,7 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-let $VIMRC_PATH=expand('%:p:h') "path of this _vimrc file
+let $VIMRC_PATH=expand('<sfile>:p:h')
 let &rtp .= ','.expand('$VIMRC_PATH/vimfiles')
 
 source $VIMRC_PATH/nacho/common.vim
