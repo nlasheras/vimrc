@@ -50,3 +50,7 @@ map <leader>v "+p
 " common typos
 command! W1 w!
 
+" JSON utility pretty print (using Python 3)
+command JsonPrettyPrint :%!python -m json.tool<CR>
+map <leader>j :JsonPrettyPrint
+

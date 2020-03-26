@@ -16,3 +16,10 @@ augroup Binary
   au BufWritePost *.bin set nomod | endif
 augroup END
 
+let pretty_print_minified_json=0
+augroup MinifiedJSON
+    au BufReadPost *.json if pretty_print_minified_json && line('$')==1 | :JsonPrettyPrint
+augroup END
+
+
+
