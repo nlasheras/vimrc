@@ -7,6 +7,7 @@ set softtabstop=4
 set expandtab
 set guioptions-=m
 set guioptions-=T
+set guioptions-=r
 set nu " nu[mber] show line numbers
 
 " Default window size
@@ -54,3 +55,4 @@ command! W1 w!
 command JsonPrettyPrint :%!python -m json.tool<CR>
 map <leader>j :JsonPrettyPrint
 
+map <leader>g :g/
