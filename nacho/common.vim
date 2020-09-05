@@ -46,7 +46,7 @@ map <leader>v "+p
 
 " buffer selection
 :nnoremap <leader>b :buffers<CR>:buffer<Space>
-:nnoremap <A-o>     :buffers<CR>:buffer<Space>
+:nnoremap <A-o>     :buffer#<CR>
 
 " common typos
 command! W1 w!
@@ -56,3 +56,9 @@ command JsonPrettyPrint :%!python -m json.tool<CR>
 map <leader>j :JsonPrettyPrint
 
 map <leader>g :g/
+map <leader>n :set relativenumber!<CR>
+
+" Delete marks and registers
+command! DelRegisters for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
+au VimEnter * delmarks! | delmarks A-Z0-9
+
