@@ -10,6 +10,7 @@ let $VIMRC_PATH=expand('<sfile>:p:h')
 let &rtp .= ','.expand('$VIMRC_PATH/vimfiles')
 
 source $VIMRC_PATH/nacho/common.vim
+source $VIMRC_PATH/nacho/gvim.vim
 source $VIMRC_PATH/nacho/plugins.vim
 source $VIMRC_PATH/nacho/filetypes.vim
 
