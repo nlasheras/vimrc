@@ -19,5 +19,9 @@ map <leader>x "+d
 map <leader>c "+y 
 map <leader>v "+p 
 
+vnoremap <C-X> "+d
+vnoremap <C-C> "+y
+vnoremap <C-V> "+p
+
 map <leader>n :set relativenumber!<CR>
 
