@@ -8,6 +8,7 @@ let mapleader=" "
 
 let $VIMRC_PATH=expand('<sfile>:p:h')
 let &rtp .= ','.expand('$VIMRC_PATH/vimfiles')
+let &pp .= ','.expand('$VIMRC_PATH/vimfiles')
 
 source $VIMRC_PATH/nacho/common.vim
 source $VIMRC_PATH/nacho/gvim.vim

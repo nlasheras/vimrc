@@ -1,7 +1,9 @@
 "" Common options I want in all my Vims
 
 set encoding=utf-8
-colorscheme zenburn
+
+packadd! dracula
+colorscheme dracula
 
 set guioptions-=m
 set guioptions-=T
