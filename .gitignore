@@ -1,3 +1,5 @@
 nacho/local_options.vim
 vimfiles/.netrwhist
  
+# Dracula pack needs to be manually cloned
+vimfiles/pack/themes/start/dracula
