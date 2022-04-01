@@ -2,7 +2,6 @@
 " that the dotfile on vsvimrcpath (~/_vsvimrc) will start 
 " with a cd to the this folder. 
 
-source _vsvimrc
 nnoremap <Space> <nop>
 let mapleader=" "
 
