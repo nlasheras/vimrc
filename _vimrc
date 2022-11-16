@@ -1,7 +1,10 @@
-set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
+if &compatible | set nocompatible | endif
 behave mswin
+
+if !has('nvim')
+    source $VIMRUNTIME/vimrc_example.vim
+    source $VIMRUNTIME/mswin.vim
+endif
 
 nnoremap <Space> <nop>
 let mapleader=" "

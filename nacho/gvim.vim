@@ -9,6 +9,7 @@ set guioptions-=m
 set guioptions-=T
 set guioptions-=r
 set nu " nu[mber] show line numbers
+set mouse=a
 
 " Default window size
 set columns=120
