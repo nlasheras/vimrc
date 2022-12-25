@@ -1,0 +1,9 @@
+" Because of limited scripting support in VsVim I assume
+" that the dotfile on vsvimrcpath (~/_vsvimrc) will start 
+" with a cd to the this folder. 
+
+nnoremap <Space> <nop>
+let mapleader=" "
+
+source nacho/common.vim
+source nacho/vsvim.vim
