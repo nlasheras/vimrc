@@ -3,3 +3,16 @@ let mapleader=" "
 
 source nacho/common.vim
 source nacho/vsvim.vim
+
+map <leader>kf :action ReformatCode<CR>
+
+nmap <Leader>fb :action RecentFiles<CR>
+nmap <Leader>ff :action GotoFile<CR>
+nmap <Leader>fg :action SearchEverywhere<CR>
+nmap <Leader><Leader>b :action RecentFiles<CR>
+
+" Commenting
+nmap <Leader>cc :action CommentByLineComment<CR>
+nmap <Leader>cb :action CommentByBlockComment<CR>
+
+nmap <Leader>r :action Refactorings.QuickListPopupAction<CR>
