@@ -1,0 +1,40 @@
+{
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "<leader>", "k", "f" ],
+            "commands": [ "editor.action.format" ],
+            "silent": true
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "<leader>", "k", "f" ],
+            "commands": [ "editor.action.formatSelection" ],
+            "silent": true
+        },
+        {
+            "before": [ "<leader>", "c", "c" ],
+            "commands": [ "editor.action.commentLine" ],
+            "silent": true
+        },
+        {
+            "before": [ "<leader>", "c", "b" ],
+            "commands": [ "editor.action.blockComment" ],
+            "silent": true
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-c>": false,
+        "<C-x>": false,
+        "<C-v>": false,
+    },
+}
