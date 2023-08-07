@@ -21,9 +21,17 @@ set scrolloff=2
 set wildmode=longest:full,list:full
 
 " I don't want the backups in the same folder as the file
-set backupdir=$TEMP
-set directory=$TEMP
-set undodir=$TEMP
+if has("mac")
+    set backupdir=$TMPDIR
+    set directory=$TMPDIR
+    set undodir=$TMPDIR
+endif
+if has("win32")
+    set backupdir=$TEMP
+    set directory=$TEMP
+    set undodir=$TEMP
+endif
+
 
 " Whitespaces 
 set listchars=tab:»\ ,eol:¶
