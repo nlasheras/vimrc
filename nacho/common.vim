@@ -22,6 +22,11 @@ map <leader>v "+p
 map <C-x> "+d
 map <C-c> "+y
 map <C-v> "+p
+if has("mac")
+    map ^x "+d 
+    map ^c "+y 
+    map ^v "+p 
+endif
 
 map <leader>n :set relativenumber!<CR>
 
