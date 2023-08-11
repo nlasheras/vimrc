@@ -23,10 +23,13 @@ map <C-x> "+d
 map <C-c> "+y
 map <C-v> "+p
 if has("mac")
-    map ^x "+d 
-    map ^c "+y 
-    map ^v "+p 
+    imap <C-v> <Esc>"+pa
+    map <D-x> "+d
+    map <D-c> "+y
+    imap <D-v> <Esc>"+pa
 endif
 
 map <leader>n :set relativenumber!<CR>
 
+map <leader>] :source $MYVIMRC<CR>
+map <leader>[ :source %<CR>
