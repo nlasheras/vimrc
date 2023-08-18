@@ -1,7 +1,7 @@
 "" Configuration for common plugins
 
 " netrw
-map <leader>t :Vexplore<CR>
+map <leader>t :Lexplore<CR>
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:netrw_browse_split = 4
@@ -27,3 +27,10 @@ set wildignore+=*.pyc,*.jar
 set wildignore+=*.png,*.tga,*.jpg,*.psd,*.wav,*.svg
 set wildignore+=*\\.svn\\*                              " Subversion
 
+nmap <leader>f :Files<CR>
+nmap <leader>g :GitFiles<CR>
+nmap <leader>b :Buffers<CR>
+nmap <leader>u :cd ..<CR>
+
+map <leader>] :source $MYVIMRC<CR>
+map <leader>[ :source %<CR>

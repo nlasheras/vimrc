@@ -20,3 +20,22 @@ nnoremap gI :vsc Edit.GoToImplementation<cr>
 
 noremap <leader>h 1G<cr>100j?#include<cr>:noh<cr>
 
+" Similar to the ones I have in Vim with fzf
+nnoremap <leader>f :vsc Resharper.ReShaper_GoToFile<cr>
+nnoremap <leader>g :vsc Resharper.ReShaper_GoToFile<cr>
+nnoremap <leader>b :vsc Resharper.ReShaper_GoToRecentEdits<cr>
+
+" Some ideas from https://github.com/keithn/vsvimguide
+map ] :vsc ReSharper.ReSharper_GotoNextMember<CR>
+map [ :vsc ReSharper.ReSharper_GotoPrevMember<CR>
+
+map <Space>qk :vsc Tools.CustomizeKeyboard<CR>
+
+map <Space>/ :vsc ReSharper.ReSharper_LineComment<CR>
+map <Space>; A;<Esc>
+
+map <Space>r :vsc ReSharper.ReSharper_Rename<CR>
+map <Space>m :vsc ReSharper.ReSharper_GotoFileMember<CR>
+map <Space>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<CR>
+map <Space>E :vsc ReSharper.ReSharper_GotoPrevErrorInSolution<CR>
+map <Space>, :vsc ReSharper.ReSharper_GotoText<CR>
