@@ -3,6 +3,7 @@
 au BufNewFile,BufRead *.py set expandtab ts=4 sts=4 sw=4 nowrap
 au BufNewFile,BufRead *.cpp,*.h,*.hpp,*.c,*.cc,*.m,*.mm,*.inl set expandtab nowrap
 au BufNewFile,BufRead *.txt set wrap 
+au BufNewFile,BufRead *.Jenkinsfile set ft=Groovy 
 
 " vim -b : edit binary using xxd-format!
 augroup Binary
