@@ -33,3 +33,5 @@ map <leader>n :set relativenumber!<CR>
 
 map <leader>] :source $MYVIMRC<CR>
 map <leader>[ :source %<CR>
+
+map <leader><F5> :edit!<CR>

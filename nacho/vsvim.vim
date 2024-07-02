@@ -30,6 +30,8 @@ map ] :vsc ReSharper.ReSharper_GotoNextMember<CR>
 map [ :vsc ReSharper.ReSharper_GotoPrevMember<CR>
 
 map <Space>qk :vsc Tools.CustomizeKeyboard<CR>
+map <Space>qt :vsc Tools.ExternalTools<CR>
+map <Space>qf :vsc ReSharper.ReSharper_ShowEditorConfigInfo<CR>
 
 map <Space>/ :vsc ReSharper.ReSharper_LineComment<CR>
 map <Space>; A;<Esc>
@@ -39,3 +41,15 @@ nnoremap <Space>m :vsc ReSharper.ReSharper_GotoFileMember<CR>
 nnoremap <Space>e :vsc ReSharper.ReSharper_GotoNextErrorInSolution<CR>
 nnoremap <Space>E :vsc ReSharper.ReSharper_GotoPrevErrorInSolution<CR>
 nnoremap <Space>, :vsc ReSharper.ReSharper_GotoText<CR>
+
+
+map <Space>tv :vsc Tools.ExternalCommand6<CR>
+map <Space>tc :vsc Tools.ExternalCommand7<CR>
+map <Space>tj :vsc Tools.ExternalCommand8<CR>
+
+map <Space>tr :vsc Tools.ExternalCommand11<CR>
+
+map <Space>t2 :vsc Tools.ExternalCommand9<CR>
+map <Space>t3 :vsc Tools.ExternalCommand10<CR>
+
+
