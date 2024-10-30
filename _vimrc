@@ -1,5 +1,5 @@
 if &compatible | set nocompatible | endif
-behave mswin
+"behave mswin
 
 if !has('nvim')
     source $VIMRUNTIME/vimrc_example.vim
