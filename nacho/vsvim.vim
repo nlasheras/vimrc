@@ -43,13 +43,13 @@ nnoremap <Space>E :vsc ReSharper.ReSharper_GotoPrevErrorInSolution<CR>
 nnoremap <Space>, :vsc ReSharper.ReSharper_GotoText<CR>
 
 
-map <Space>tv :vsc Tools.ExternalCommand6<CR>
-map <Space>tc :vsc Tools.ExternalCommand7<CR>
-map <Space>tj :vsc Tools.ExternalCommand8<CR>
+map <Space>tv :vsc Tools.ExternalCommand4<CR>
+map <Space>tj :vsc Tools.ExternalCommand5<CR>
+map <Space>tc :vsc Tools.ExternalCommand6<CR>
 
-map <Space>tr :vsc Tools.ExternalCommand11<CR>
+map <Space>tr :vsc Tools.ExternalCommand8<CR>
 
-map <Space>t2 :vsc Tools.ExternalCommand9<CR>
-map <Space>t3 :vsc Tools.ExternalCommand10<CR>
+map <Space>t2 :vsc Tools.ExternalCommand10<CR>
+map <Space>t3 :vsc Tools.ExternalCommand11<CR>
 
 
