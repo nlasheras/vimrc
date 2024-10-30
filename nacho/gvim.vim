@@ -44,8 +44,12 @@ highlight SpecialKey guifg=#7f9f7f
 :nnoremap <leader>o :buffer#<CR>
 
 " JSON utility pretty print (using Python 3)
-command JsonPrettyPrint :%!python -m json.tool<CR>
-map <leader>j :JsonPrettyPrint
+if has("mac")
+    command JsonPrettyPrint :%!python3 -m json.tool
+else
+    command JsonPrettyPrint :%!python -m json.tool<CR>
+endif
+map <leader>j :JsonPrettyPrint<CR>
 
 map <leader>g :g/
 
