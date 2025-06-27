@@ -30,6 +30,8 @@ if has("mac")
 endif
 
 map <leader>n :set relativenumber!<CR>
+map <leader>h :set wrap!<CR>
+map <leader>r :reg<CR>
 
 map <leader>] :source $MYVIMRC<CR>
 map <leader>[ :source %<CR>
