@@ -57,3 +57,7 @@ map <leader>g :g/
 command! DelRegisters for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
 au VimEnter * delmarks! | delmarks A-Z0-9
 
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=200 }
+augroup END
