@@ -15,17 +15,16 @@ set incsearch
 map <leader>i :set list!<CR>
 
 " cut/copy/paste to/from clipboard
-map <leader>x "+d 
-map <leader>c "+y 
-map <leader>v "+p 
+nnoremap <leader>x "+d 
+nnoremap <leader>c "+y 
+nnoremap <leader>v "+p 
 
-map <C-x> "+d
-map <C-c> "+y
-map <C-v> "+p
 if has("mac")
-    imap <C-v> <Esc>"+pa
-    map <D-x> "+d
-    map <D-c> "+y
+    nmap <D-x> "+d
+    nmap <D-c> "+y
+    nmap <D-v> "+p
+    vmap <D-x> "+d
+    vmap <D-c> "+y
     imap <D-v> <Esc>"+pa
 endif
 
